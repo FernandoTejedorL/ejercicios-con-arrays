@@ -51,9 +51,9 @@ const outOfTen = (numbersB) => {
   if (numbersB.includes(randomPosition)){
     return 'El array contiene el número ' + randomPosition +
       ' en la posición ' + numbersB.indexOf(randomPosition);
-  } else {
-    return 'El array no contiene el número ' + randomPosition
-}
+  } 
+    return 'El array no contiene el número ' + randomPosition;
+
 }
 const result3 = outOfTen([2, 4, 6, 8, 9]);
 console.log(result3);
