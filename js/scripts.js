@@ -47,11 +47,6 @@ La función deberá decir si el array contiene ese número y en qué
 posición está o si no lo contiene.*/
 
 const outOfTen = (numbersB) => {
-  const position1 = numbersB[0];
-  const position2 = numbersB[1];
-  const position3 = numbersB[2];
-  const position4 = numbersB[3];
-  const position5 = numbersB[4];
   const randomPosition = Math.floor(Math.random() * 11);
   if (numbersB.includes(randomPosition)){
     return 'El array contiene el número ' + randomPosition +
