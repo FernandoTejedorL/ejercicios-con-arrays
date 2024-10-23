@@ -13,30 +13,15 @@ La función deberá imprimir por consola.
   - "La media de todos los números es:[media]"
   - "El mayor es [mayor] y el menor es [menor]"*/
 
-const topOfThree = (numbersA) => {
-if (numbersA[0] > numbersA[1] && numbersA[0] > numbersA[2]) {
-    return numbersA[0];
-  } else if (numbersA[1]>numbersA[0] && numbersA[1]>numbersA[2]){
-    return numbersA[1];
-  } else if (numbersA[2]>numbersA[0] && numbersA[2]>numbersA[1]) {
-    return numbersA[2];
-  }
-}
-const botOfThree = (numbersA) => {
-  if (numbersA[0] < numbersA[1] && numbersA[0] < numbersA[2]) {
-    return numbersA[0];
-  } else if (numbersA[1]<numbersA[0] && numbersA[1]<numbersA[2]){
-    return numbersA[1];
-  } else if (numbersA[2]<numbersA[0] && numbersA[2]<numbersA[1]) {
-    return numbersA[2];
-  }
-}
+
 const threeAbout = (numbersA) => {
+  const maxOfThree = Math.max(numbersA[0], numbersA[1], numbersA[2]);
+  const minOfThree = Math.min(numbersA[0], numbersA[1], numbersA[2]);
   const sumOfThree = numbersA[0] + numbersA[1] + numbersA[2];
   const aveOfThree = (numbersA[0] + numbersA[1] + numbersA[2]) / 3;
   console.log('La suma de todos los números es: ' + sumOfThree);
   console.log('La media de todos los números es: ' + aveOfThree);
-  console.log(`El mayor es ${topOfThree(numbersA)} y el menor es ${botOfThree(numbersA)}`)
+  console.log(`El mayor es ${maxOfThree} y el menor es ${minOfThree}`)
 }
 
 threeAbout([12, 15, 16])
