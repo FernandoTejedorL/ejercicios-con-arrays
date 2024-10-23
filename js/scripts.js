@@ -66,14 +66,15 @@ console.log(result3);
 /* 4. Crea una función que reciba un array vacío y lo devuelva 
 con 3 números aleatorios entre 0 y 100.*/
 
-const createArray = (array) => {
+const createArray1 = (array) => {
     const firstComp = Math.floor(Math.random() * 101);
   const secondComp = Math.floor(Math.random() * 101);
   const thirdComp = Math.floor(Math.random() * 101);
-  return [firstComp,secondComp,thirdComp];
+  array.push(firstComp, secondComp, thirdComp);
+  return array
 }
-const result4 = createArray([]);
-console.log(result4);
+const result4b = createArray1([]);
+console.log(result4b);
  
 
 /* 5. Crea una función llamada dniLetter que recibirá un número de DNI
